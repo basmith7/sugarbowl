@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" font-family="'JetBrains Mono','SFMono-Regular',Menlo,Consolas,monospace">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b0710"/><stop offset="1" stop-color="#140c06"/>
+    </linearGradient>
+    <linearGradient id="honey" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffd27a"/><stop offset=".55" stop-color="#ffb347"/><stop offset="1" stop-color="#ff7ab6"/>
+    </linearGradient>
+    <radialGradient id="glow" cx=".78" cy=".5" r=".45">
+      <stop offset="0" stop-color="#ffb347" stop-opacity=".22"/><stop offset="1" stop-color="#ffb347" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="hex" width="28" height="48.5" patternUnits="userSpaceOnUse" patternTransform="scale(1.2)">
+      <path d="M14 0l14 8.08v16.17L14 32.33 0 24.25V8.08z M14 32.33v16.17" fill="none" stroke="#ffb347" stroke-opacity=".05"/>
+    </pattern>
+    <style>
+      .n{fill:#ffd27a} .l{stroke:#ffb347;stroke-opacity:.35;stroke-width:1.2}
+      .p{fill:#ff7ab6;animation:pulse 2.4s ease-in-out infinite}
+      .p2{animation-delay:.8s}.p3{animation-delay:1.6s}
+      @keyframes pulse{0%,100%{opacity:.25}50%{opacity:1}}
+      .spin{transform-origin:930px 180px;animation:spin 40s linear infinite}
+      @keyframes spin{to{transform:rotate(360deg)}}
+      .cur{animation:blink 1.1s steps(1) infinite}@keyframes blink{50%{opacity:0}}
+    </style>
+  </defs>
+  <rect width="1200" height="360" rx="18" fill="url(#bg)"/>
+  <rect width="1200" height="360" rx="18" fill="url(#hex)"/>
+  <rect width="1200" height="360" rx="18" fill="url(#glow)"/>
+  <g class="spin">
+    <g class="l">
+      <line x1="930" y1="180" x2="1040" y2="90"/><line x1="930" y1="180" x2="1060" y2="230"/>
+      <line x1="930" y1="180" x2="830" y2="80"/><line x1="930" y1="180" x2="820" y2="250"/>
+      <line x1="930" y1="180" x2="960" y2="300"/><line x1="1040" y1="90" x2="1060" y2="230"/>
+      <line x1="830" y1="80" x2="1040" y2="90"/><line x1="820" y1="250" x2="960" y2="300"/>
+      <line x1="1060" y1="230" x2="960" y2="300"/><line x1="830" y1="80" x2="820" y2="250"/>
+    </g>
+    <circle class="n" cx="930" cy="180" r="9"/>
+    <circle class="n" cx="1040" cy="90" r="5"/><circle class="p" cx="1060" cy="230" r="6"/>
+    <circle class="n" cx="830" cy="80" r="5"/><circle class="p p2" cx="820" cy="250" r="6"/>
+    <circle class="p p3" cx="960" cy="300" r="5"/>
+  </g>
+  <text x="72" y="96" fill="#ffb347" font-size="18" letter-spacing="4" opacity=".85">◆ SUGARBOWL · v0.42</text>
+  <text x="68" y="190" fill="url(#honey)" font-size="92" font-weight="800" letter-spacing="-2">sugarbowl</text>
+  <text x="72" y="240" fill="#e9dcc9" font-size="24">The orchestration layer for agent skills.</text>
+  <text x="72" y="292" fill="#8f8296" font-size="18">$ npx github:basmith7/sugarbowl<tspan class="cur" fill="#ffd27a"> ▍</tspan></text>
+</svg>

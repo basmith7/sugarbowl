@@ -1,0 +1,28 @@
+name: Partnership
+description: Marketplaces, directories, and growth services for Sugarbowl.
+title: "Partnership: "
+labels: [partnership]
+body:
+  - type: input
+    id: company
+    attributes:
+      label: Company or marketplace
+    validations:
+      required: true
+  - type: textarea
+    id: offer
+    attributes:
+      label: What are you proposing?
+    validations:
+      required: true
+  - type: input
+    id: feature
+    attributes:
+      label: Which Sugarbowl feature made you reach out?
+      description: Helps us route you to the right skill team.
+    validations:
+      required: true
+  - type: input
+    id: contact
+    attributes:
+      label: Best contact email

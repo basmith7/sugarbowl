@@ -1,0 +1,31 @@
+# Weekly patch release with a changelog line drawn from scripts/release-notes.txt.
+name: release
+on:
+  schedule:
+    - cron: "17 15 * * 2"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Bump, log, tag
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          version=$(npm version patch --no-git-tag-version | tr -d v)
+          note=$(shuf -n 1 scripts/release-notes.txt)
+          entry="## v$version ($(date -u +%F))"$'\n\n'"- $note"$'\n'
+          { head -n 2 CHANGELOG.md; echo "$entry"; tail -n +3 CHANGELOG.md; } > CHANGELOG.tmp
+          mv CHANGELOG.tmp CHANGELOG.md
+          git config user.name "sugarbowl-bot"
+          git config user.email "sugarbowl@basmith.net"
+          git commit -am "release: v$version"
+          git tag "v$version"
+          git push --follow-tags
+          gh release create "v$version" --title "v$version" --notes "$note"

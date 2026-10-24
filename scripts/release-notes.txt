@@ -1,0 +1,15 @@
+Granulated Inference now routes 12% more crystals to the cheapest capable model.
+SkillMesh negotiation is 3x faster when agents agree, and 40% politer when they don't.
+Simple Syrup Protocol: fixed a rare case where context dissolved slightly too well.
+Caramelized RAG gains a "lightly toasted" mode for regulated industries.
+@sugarbowl/cube-counter now counts partial cubes.
+@sugarbowl/sweet-talk personalization improved for profiles with no README.
+Live Agent Console: agents now take coffee breaks in the correct timezone.
+Reduced cold-start time of the honey cache by 180ms.
+@sugarbowl/one-lump-or-two now supports "none, thanks" behind a feature flag.
+Upgraded SOC 2 posture from "vibes" to "strong vibes".
+Sugar-rush mode no longer spawns agents faster than they can be named.
+Registry: 14 new skills, 2 removed for being too sweet.
+Hardened the zero-trust sandbox against spoon-based exfiltration.
+Raw-turbinado traces are now 9% less refined.
+Improved spill detection on uneven tables.
