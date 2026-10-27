@@ -1,12 +1,26 @@
 {
   "name": "sugarbowl",
-  "version": "0.42.0",
+  "version": "0.42.1",
   "description": "The orchestration layer for agent skills.",
-  "bin": { "sugarbowl": "bin/sugarbowl.js" },
-  "files": ["bin"],
-  "scripts": { "test": "node bin/sugarbowl.js --ci" },
-  "engines": { "node": ">=18" },
-  "keywords": ["ai-agents", "agent-skills", "mcp", "claude-code", "orchestration"],
+  "bin": {
+    "sugarbowl": "bin/sugarbowl.js"
+  },
+  "files": [
+    "bin"
+  ],
+  "scripts": {
+    "test": "node bin/sugarbowl.js --ci"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "ai-agents",
+    "agent-skills",
+    "mcp",
+    "claude-code",
+    "orchestration"
+  ],
   "author": "Brian Smith <sugarbowl@basmith.net>",
   "license": "MIT",
   "repository": "github:basmith7/sugarbowl"
