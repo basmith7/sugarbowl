@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.42.2 (2026-11-03)
+
+- SkillMesh negotiation is 3x faster when agents agree, and 40% politer when they don't.
+
 ## v0.42.1 (2026-10-27)
 
 - @sugarbowl/sweet-talk personalization improved for profiles with no README.
